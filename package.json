@@ -1,6 +1,6 @@
 {
-  "name": "@scope/plugin-name",
-  "version": "1.0.0",
+  "name": "eleventy-plugin-name",
+  "version": "0.0.1",
   "description": "Description of plugin",
   "homepage": "",
   "main": ".eleventy.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/repo-name.git"
+    "url": "git@github.com:brob/eleventy-plugin-start.git"
   },
   "keywords": [
     "11ty",
@@ -20,8 +20,8 @@
     "eleventy-plugin"
   ],
   "author": {
-    "name": "username",
-    "url": "https://website.com"
+    "name": "brob",
+    "url": "https://bryanlrobinson.com"
   },
   "license": "ISC",
   "bugs": {

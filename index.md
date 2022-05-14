@@ -1,6 +1,19 @@
 ---
 layout: base.njk
+data: 
+  - title: "hi there!"
+    description: "This is a long description that has multiple words for testing stuff and things."
+  - title: "Woah there!"
+    description: "This is a long description that has multiple words for testing stuff and things."
+  - title: "Yay there!"
+    description: "This is a long description that has multiple words for testing stuff and things."
 ---
+<div class="grid grid-cols-3 gap-4">
+{% for data in data %}
+  {% tailwind "card", "image", data %}
+{% endfor %}
+</div>
+
 
 ## Plugin Test Page
 
