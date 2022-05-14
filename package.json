@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-plugin-name",
+  "name": "eleventy-plugin-tailwind-components",
   "version": "0.0.1",
-  "description": "Description of plugin",
+  "description": "A plugin for Eleventy to use Tailwind CSS components built by HyperUI",
   "homepage": "",
   "main": ".eleventy.js",
   "scripts": {
@@ -11,13 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:brob/eleventy-plugin-start.git"
+    "url": "git@github.com:brob/eleventy-plugin-tailwind-components.git"
   },
   "keywords": [
     "11ty",
     "11ty-plugin",
     "eleventy",
-    "eleventy-plugin"
+    "eleventy-plugin",
+    "tailwind",
+    "hyperui"
   ],
   "author": {
     "name": "brob",
@@ -27,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/username/repo-name/issues"
   },
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
   }
 }
