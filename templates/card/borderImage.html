@@ -1,0 +1,31 @@
+<{{#if url}}a href="{{url}}"{{else}}div{{/if}} 
+  class="block overflow-hidden border border-gray-100 rounded-lg shadow-sm"
+  href=""
+>
+  <img
+    class="object-cover w-full h-56"
+    src="{{image}}"
+    alt=""
+  />
+
+  <div class="p-6">
+    {{#if title}}
+    <h5 class="text-xl font-bold">
+      {{title}}
+    </h5>
+    {{/if}}
+
+    {{#if description}}<p class="mt-2 text-sm text-gray-500">
+      {{description}}
+    </p>{{/if}}
+
+    {{#if url}}
+    <div
+      class="inline-block pb-1 mt-4 font-medium text-blue-600 border-b border-blue-500 "
+    >
+      Find out more
+      <span aria-hidden="true">&rarr;</span>
+    </div>
+    {{/if}}
+  </div>
+</{{#if url}}a{{else}}div{{/if}}>
