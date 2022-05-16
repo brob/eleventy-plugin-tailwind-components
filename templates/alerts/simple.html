@@ -1,0 +1,11 @@
+<{{#if url}}a href="{{url}}"{{else}}div{{/if}} 
+  class="p-4 block text-{{#if color}}{{color}}{{else}}sky{{/if}}-700 border rounded border-{{#if color}}{{color}}{{else}}sky{{/if}}-900/10 bg-{{#if color}}{{color}}{{else}}sky{{/if}}-50"
+  role="alert"
+>
+  <strong class="text-sm font-medium"> {{text}} </strong>
+  {{#if description}}
+  <p class="mt-1 text-xs">
+    {{description}}
+  </p>
+  {{/if}}
+</{{#if url}}a{{else}}div{{/if}}>

@@ -1,0 +1,26 @@
+<{{#if url}}a href="{{url}}"{{else}}div{{/if}} class="relative block group h-96">
+    <span class="absolute inset-0 border-2 border-black border-dashed"></span>
+  
+    <div
+      class="relative flex items-end h-full transition-transform transform bg-white border-2 border-black group-hover:-translate-x-2 group-hover:-translate-y-2"
+    >
+      <div class="px-8 pb-8 transition-opacity group-hover:opacity-0 group-hover:absolute">
+        {{#if svg}}
+        {{{svg}}}
+        {{/if}}
+  
+        {{#if title}}<h2 class="mt-4 text-2xl font-medium">{{title}}</h2>{{/if}}
+      </div>
+  
+      <div class="absolute p-8 transition-opacity opacity-0 group-hover:opacity-100 group-hover:relative">
+        {{#if title}}<h2 class="mt-4 text-2xl font-medium">{{title}}</h2>{{/if}}
+        {{#if description}}
+        <p class="mt-4">
+          {{description}}
+        </p>
+        {{/if}}
+  
+        <p class="mt-8 font-bold">Read more</p>
+      </div>
+    </div>
+</{{#if url}}a{{else}}div{{/if}}>

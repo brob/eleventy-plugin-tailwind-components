@@ -44,6 +44,24 @@ module.exports = (eleventyConfig) => {
 | borderImage | title, description, image, url | Simple light background, bordered card |
 
 
+## Alert Templates
+```
+{% tailwind "alerts" "simple" data %}
+```
+
+| property      | Type | Description       |
+| ----------- | ---- | ------------- |
+| title | string | A title for the card |
+| color | string | A tailwind color (default: sky) |
+| description | string | an optional short description to show on the card |
+| url | string | optional url |
+
+
+
+| Card type | accepted data | description |
+| ----------- | ---- | ------------- |
+| simple | text, color, description, url | text alert banner |
+
 ## Credits
 
 Components from [HyperUI](https://www.hyperui.dev/) by [Mark Mead](https://twitter.com/itsmarkmead)
