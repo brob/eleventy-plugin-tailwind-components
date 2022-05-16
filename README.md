@@ -58,9 +58,29 @@ module.exports = (eleventyConfig) => {
 
 
 
-| Card type | accepted data | description |
+| Alert type | accepted data | description |
 | ----------- | ---- | ------------- |
 | simple | text, color, description, url | text alert banner |
+
+
+## Announcement template
+
+```
+{% tailwind "announcements" "top" data %}
+```
+| property      | Type | Description       |
+| ----------- | ---- | ------------- |
+| text | string | Text for the announcment |
+| color | string | A tailwind color (default: sky) |
+| url | string | optional url |
+| linkText | string | Text for the optional link |
+
+| Announcement type | accepted data | description |
+| ----------- | ---- | ------------- |
+| top | text, description, url, linkText | Announcement banner top of page |
+| bottom | text, description, url, linkText | Announcement banner sticky bottom of page |
+| floatingBottom | text, description, url, linkText | Announcement banner sticky bottom of page (not full width) |
+
 
 ## Credits
 

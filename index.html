@@ -28,10 +28,20 @@ alertData:
     description: "This is a long description that has multiple words for testing stuff and things."
   - text: "Alert 2 here"
     url: "/"
+announcement:
+  text: "This is a long description that has multiple words for testing stuff and things."
+  url: "/"
+  linkText: "Read more please"
+  color: "red"
 ---
 
+{% tailwind "announcements" "top" announcement %}
+{% tailwind "announcements" "bottom" announcement %}
+
+
+
 {% for alert in alertData %}
-{% tailwind "alerts" "simple" alert %}
+  {% tailwind "alerts" "simple" alert %}
 {% endfor %}
 
 
