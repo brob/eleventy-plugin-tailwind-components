@@ -32,26 +32,38 @@ announcement:
   text: "This is a long description that has multiple words for testing stuff and things."
   url: "/"
   linkText: "Read more please"
-  color: "red"
 ---
+
+<h1 class="mt-4 text-2xl font-medium">HyperUI Tailwind components</h1>
+<p>
+  This is a collection of Tailwind CSS components that can be used in your 11ty project.
+</p>
+<p>Find out more in <a href="https://github.com/brob/eleventy-plugin-tailwind-components">the repo &raquo;</a></p>
+
+<h2 class="mt-4 text-2xl font-medium">Announcements bars ("bottom" is sticky to the bottom)</h2>
+
 
 {% tailwind "announcements" "top" announcement %}
 {% tailwind "announcements" "bottom" announcement %}
 
 
-
+<h2 class="mt-4 text-2xl font-medium">Alert bars</h2>
+<h3>Simple</h3>
 {% for alert in alertData %}
   {% tailwind "alerts" "simple" alert %}
 {% endfor %}
 
 <br><br>
-
+<h2 class="mt-4 text-2xl font-medium">Promo cards</h2>
+<h3>plainHover</h3>
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
     {% tailwind "card", "plainHover", data %}
   {% endfor %}
   </div>
   <br><br>
+
+<h3>borderImage</h3>
 
 <div class="grid grid-cols-3 gap-4">
 {% for data in data %}
@@ -60,21 +72,18 @@ announcement:
 </div>
 <br><br>
 
+<h3>gradient</h3>
+
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
     {% tailwind "card", "gradient", data %}
   {% endfor %}
 </div>
 <br><br>
+<h3>image</h3>
 
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
     {% tailwind "card", "image", data %}
   {% endfor %}
   </div>
-
-<br><br>
-<h3> Plugin Test Page</h3>
-
-<p>Cupcake ipsum dolor. Sit amet I love I love I love. I love pudding dragée. Halvah macaroon halvah I love jujubes bonbon I love pie. Bonbon gingerbread bonbon I love. Tootsie roll chocolate sweet jelly-o lemon drops cotton candy gummies.</p>
-
