@@ -42,6 +42,7 @@ module.exports = (eleventyConfig) => {
 | gradient | title, description, url | Simple card with gradient border |
 | image | title, description, image, url | Dark background card with image |
 | borderImage | title, description, image, url | Simple light background, bordered card |
+| simpleHover | title, description, image, url | Simple light background, bordered card shows icon and title and then on hover shows description |
 
 
 ## Alert Templates
@@ -71,7 +72,7 @@ module.exports = (eleventyConfig) => {
 | property      | Type | Description       |
 | ----------- | ---- | ------------- |
 | text | string | Text for the announcment |
-| color | string | A tailwind color (default: sky) |
+| color | string | A tailwind color (default: indigo) |
 | url | string | optional url |
 | linkText | string | Text for the optional link |
 

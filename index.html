@@ -44,25 +44,28 @@ announcement:
   {% tailwind "alerts" "simple" alert %}
 {% endfor %}
 
-
+<br><br>
 
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
     {% tailwind "card", "plainHover", data %}
   {% endfor %}
   </div>
+  <br><br>
 
 <div class="grid grid-cols-3 gap-4">
 {% for data in data %}
   {% tailwind "card", "borderImage", data %}
 {% endfor %}
 </div>
+<br><br>
 
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
     {% tailwind "card", "gradient", data %}
   {% endfor %}
 </div>
+<br><br>
 
 <div class="grid grid-cols-3 gap-4">
   {% for data in data %}
